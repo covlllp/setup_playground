@@ -1,0 +1,16 @@
+{
+  "name": "setup_playground",
+  "scripts": {
+    "start": "babel-node index"
+  },
+  "version": "1.0.0",
+  "description": "Helps remember how to set up various node things",
+  "main": "index.js",
+  "repository": "https://github.com/covlllp/setup_playground.git",
+  "author": "Colin VanLang <colinvanlang@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
