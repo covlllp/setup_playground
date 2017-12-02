@@ -34,8 +34,37 @@ EsLint
 ---
 Linting is helpful. Use it to find bugs and things. Use airbnb rules.
 
-### Prettier
+- Install `eslint`
+- Run `./node_modules/.bin/eslint --init` and answer things. That will automatically add the airbnb plugins for you (and set up your .eslintrc.json file)
+
+### Some rule modifications
+I prefer to avoid default exports, so disable `prefer-default-export`:
+```javascript
+"rules": {
+  "import/prefer-default-export": 0
+}
+```
+
+## Prettier
 Formatting for lint errors is annoying, so use Prettier to fix that.
+
+- First, `prettier` needs to be installed globally.
+- Install `prettier`
+- To remove eslint checks that prettier covers, add `eslint-config-prettier` and add it to eslint:
+```javascript
+{ "extends": ["prettier"] }
+```
+
+### Further configuration
+Some of the default prettier rules are dumb. Change them in `.prettierrc`
+
+```javascript
+{
+  singleQuote: true, // single quotes are better than double quotes
+  trailingComma: "all", // trailing commas make me happy
+}
+```
+
 
 Jest
 ---
