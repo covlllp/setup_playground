@@ -50,9 +50,11 @@ Formatting for lint errors is annoying, so use Prettier to fix that.
 
 - First, `prettier` needs to be installed globally.
 - Install `prettier`
+
+Note: I don't know if below is necessary
 - To remove eslint checks that prettier covers, add `eslint-config-prettier` and add it to eslint:
 ```javascript
-{ "extends": ["prettier"] }
+{ "extends: ["prettier"] }
 ```
 
 ### Further configuration
@@ -68,4 +70,12 @@ Some of the default prettier rules are dumb. Change them in `.prettierrc`
 
 Jest
 ---
-Testing is important. Do it.
+Testing is important. Jest is cool and easy to set up.
+
+- `Babel-Jest` makes everything easy. Just install `jest` and it respects babel.
+- To get it to work with eslint, install `eslint-plugin-jest` and add the following to your eslint config
+
+```javascript
+{ plugins: ["jest"] }
+
+```

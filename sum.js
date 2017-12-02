@@ -10,7 +10,3 @@ const blah = {
 const b = 'boo';
 
 const c = { blah };
-
-export default function hello() {
-  console.log('hello');
-}

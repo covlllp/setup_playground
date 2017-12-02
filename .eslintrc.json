@@ -1,6 +1,7 @@
 {
-    "extends": ["airbnb-base", "prettier"],
-    "rules": {
-      "import/prefer-default-export": 0
-    }
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["jest"],
+  "rules": {
+    "import/prefer-default-export": 0
+  }
 }
