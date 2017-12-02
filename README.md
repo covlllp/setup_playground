@@ -54,7 +54,7 @@ Formatting for lint errors is annoying, so use Prettier to fix that.
 Note: I don't know if below is necessary
 - To remove eslint checks that prettier covers, add `eslint-config-prettier` and add it to eslint:
 ```javascript
-{ "extends: ["prettier"] }
+{ "extends": ["prettier"] }
 ```
 
 ### Further configuration
