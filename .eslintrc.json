@@ -1,6 +1,7 @@
 {
-  "extends": ["airbnb-base", "prettier"],
-  "plugins": ["jest"],
+  "extends": ["airbnb-base", "prettier", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["jest", "@typescript-eslint"],
   "rules": {
     "import/prefer-default-export": 0
   }

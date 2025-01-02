@@ -2,8 +2,10 @@
   "name": "setup_playground",
   "scripts": {
     "start": "babel-node index",
+    "ts": "tsx ts",
     "test": "jest --watchAll"
   },
+  "type": "module",
   "version": "1.0.0",
   "description": "Helps remember how to set up various node things",
   "main": "index.js",
@@ -20,5 +22,9 @@
     "eslint-plugin-jest": "^21.3.2",
     "jest": "^21.2.1",
     "prettier": "^1.8.2"
+  },
+  "dependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
   }
 }

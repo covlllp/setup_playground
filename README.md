@@ -1,10 +1,12 @@
 # Setup Playground
 
 This repo helps me remember how to set up various Node services. It helps set up:
+
 - [Yarn](#yarn)
 - [Babel](#babel)
 - [EsLint](#eslint)
 - [Jest](#jest)
+- [Typescript](#typescript)
 
 Webpack is also generally used, but is also complicated enough that it deserves it's own area of documentation.
 
@@ -67,7 +69,6 @@ Some of the default prettier rules are dumb. Change them in `.prettierrc`
 }
 ```
 
-
 Jest
 ---
 Testing is important. Jest is cool and easy to set up.
@@ -79,3 +80,11 @@ Testing is important. Jest is cool and easy to set up.
 { plugins: ["jest"] }
 
 ```
+Typescript
+---
+Typescript is the future!
+
+- Install `typescript` with `yarn add typescript`
+- Initialize the project with `yarn tsc --init`
+- Run typescript with node using `tsx` (`yarn add tsx`) and running `tsx file.ts`
+- [FYI] Setting up eslint with typescript requires `@typescript-eslint/parser` and `@typescript-eslint/eslint-plugin`
